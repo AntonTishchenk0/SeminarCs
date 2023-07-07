@@ -71,10 +71,10 @@ bool QvadNumber(int num1, int num2)
     else return false;
 }
 Console.Write("Input the first number: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-bool result = QvadNumber(num1, num2);
+bool result = QvadNumber(number1, number2);
 Console.WriteLine(result);
 */
