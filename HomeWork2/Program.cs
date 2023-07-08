@@ -24,37 +24,27 @@ Console.WriteLine($"The new random number a {randNumber}, and the second digit i
 Console.WriteLine($"The new random number a {randNumber1}, and the second digit is {newNumber1}.");
 */
 
-// Task 2. Напишите программу, которая выводит третью цифру заданного числа.
+/* Task 2. Напишите программу, которая выводит третью цифру заданного числа.
 
 int OutputThirdDigit(int number)
 {
-    
-    int ThirdNum = number % 10;
-    return ThirdNum;
-    
+    int result = -1;
+    if (number >= 100)
+    {
+        while (number >= 1000)
+        {
+            number = number / 10;
+        }
+        result = number % 10;
+    }
+    return result;
 }
-int randNumber = new Random().Next(100, 1000);
+
+int randNumber = new Random().Next();
 int newNumber = OutputThirdDigit(randNumber);
 
-Console.WriteLine($"New version of {randNumber} is {newNumber}");
-
-// 458465095 / 10 = 45846509 |
-// 458465095 / 100 = 4584650 |
-// 458465095 / 1000 = 458465 |
-// 458465095 / 10000 = 45846 |
-// 458465095 / 100000 = 4584 |
-// 458465095 / 1000000 = 458 |
-// 458465095 / 10000000 = 45
-// 458465095 / 100000000 = 4
-
-// 458465095 % 10 = 5
-// 458465095 % 100 = 95
-// 458465095 % 1000 = 095
-// 458465095 % 10000 = 5095
-// 458465095 % 100000 = 65095
-// 458465095 % 1000000 = 465095
-// 458465095 % 10000000 = 8465095   |
-// 458465095 % 100000000 = 58465095 |
+Console.WriteLine($"Random number is {randNumber}, Third digit is {newNumber}");
+*/
 
 /* Task 3. Напишите программу, которая принимает на вход цифру, 
 // обозначающую день недели, и проверяет, является ли этот день выходным.
