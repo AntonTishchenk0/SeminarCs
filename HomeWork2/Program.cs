@@ -4,15 +4,15 @@
 int ShowSecNum(int number) 
 {
     int hundrers = number / 10; 
-    int SecondNumber = hundrers % 10;
-    return SecondNumber;
+    int SecondDigit = hundrers % 10;
+    return SecondDigit;
 }
 
 int ShowSecNum1(int number1)
 {
     int units = number1 % 100;
-    int SecondNumber = units / 10;
-    return SecondNumber;
+    int SecondDigit1 = units / 10;
+    return SecondDigit1;
 }
 
 int randNumber = new Random().Next(100, 1000);
