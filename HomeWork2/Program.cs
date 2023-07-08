@@ -29,7 +29,14 @@ Console.WriteLine($"The new random number a {randNumber1}, and the second digit 
 int OutputThirdDigit(int number)
 {
     
+    int ThirdNum = number % 10;
+    return ThirdNum;
+    
 }
+int randNumber = new Random().Next(100, 1000);
+int newNumber = OutputThirdDigit(randNumber);
+
+Console.WriteLine($"New version of {randNumber} is {newNumber}");
 
 // 458465095 / 10 = 45846509 |
 // 458465095 / 100 = 4584650 |
