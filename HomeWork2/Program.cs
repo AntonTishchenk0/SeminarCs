@@ -23,3 +23,15 @@ int newNumber1 = ShowSecNum1(randNumber1);
 Console.WriteLine($"The new random number a {randNumber}, and the second digit is {newNumber}.");
 Console.WriteLine($"The new random number a {randNumber1}, and the second digit is {newNumber1}.");
 */
+
+// Task 2. Напишите программу, которая выводит третью цифру заданного числа.
+
+int OutputThirdDigit(int number)
+{
+
+}
+int RandNumber = new Random().Next();
+Console.Write(RandNumber);
+
+// Task 3. Напишите программу, которая принимает на вход цифру, 
+// обозначающую день недели, и проверяет, является ли этот день выходным.
