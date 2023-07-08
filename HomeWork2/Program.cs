@@ -28,10 +28,8 @@ Console.WriteLine($"The new random number a {randNumber1}, and the second digit 
 
 int OutputThirdDigit(int number)
 {
-
+    int  = 
 }
-int RandNumber = new Random().Next();
-Console.Write(RandNumber);
 
 // Task 3. Напишите программу, которая принимает на вход цифру, 
 // обозначающую день недели, и проверяет, является ли этот день выходным.
