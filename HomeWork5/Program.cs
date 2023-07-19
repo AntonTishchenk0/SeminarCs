@@ -96,6 +96,54 @@ ShowArray(myArray);
 int SumArray = SumElements(myArray);
 Console.Write("Sum possitivs elements: " + SumArray);*/
 
-// Task 3. Задайте массив вещественных чисел. 
+/* Task 3. Задайте массив вещественных чисел. 
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+double[] CreateArray(int arrayLength)
+{
+    double[] array = new double[arrayLength];
+    for (int i = 0; i < arrayLength; i++)
+    {
+        Console.Write("Input element: ");
+        array[i] = Convert.ToDouble(Console.ReadLine());
+    }
+    return array;
+}
+
+void ShowArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+double[] DifferenceMinMax(double[] array)
+{
+
+    double min = array[0];
+    double max = array[0];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max) 
+        {
+            max = array[i];
+        }
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+    }
+    double dif = max - min;
+    return new double[] { dif };
+}
+
+Console.Write("Input length of array: ");
+double length = Convert.ToDouble(Console.ReadLine());
+int arrayLength = (int)length;
+double[] myArray = CreateArray(arrayLength);
+ShowArray(myArray);
+
+
+ShowArray(DifferenceMinMax(myArray));*/
