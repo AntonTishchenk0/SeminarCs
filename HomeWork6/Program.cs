@@ -30,4 +30,27 @@ Console.WriteLine($"Count numbers more null: {result}");*/
 // значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
+void CrossingLine()
+{
+    Console.Write("Input b1: ");
+    double b1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Input k1: ");
+    double k1 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Input b2: ");
+    double b2 = Convert.ToDouble(Console.ReadLine());
+    Console.Write("Input k2: ");
+    double k2 = Convert.ToDouble(Console.ReadLine());
 
+    if (k1 == k2)
+    {
+        if (b1 == b2) Console.WriteLine("");
+        else Console.WriteLine("");
+    }
+    else
+    {
+        double x = (b2-b1) / (k1 - k2);
+        double y = k1 * x + b1;
+    }
+    Console.WriteLine($"Red lines were crossed here: ({x}, {y})");
+}
+CrossingLine();
