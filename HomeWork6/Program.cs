@@ -43,14 +43,20 @@ void CrossingLine()
 
     if (k1 == k2)
     {
-        if (b1 == b2) Console.WriteLine("");
-        else Console.WriteLine("");
+        if (b1 == b2)
+        {
+            Console.WriteLine("The lines coincide (infinitely many points of intersection).");
+        }
+        else
+        {
+            Console.WriteLine("The lines are parallel (there is no intersection point).");
+        }
     }
     else
     {
-        double x = (b2-b1) / (k1 - k2);
+        double x = (b2 - b1) / (k1 - k2);
         double y = k1 * x + b1;
+        Console.WriteLine($"Coordinates of the intersection of lines: ({x}, {y})");
     }
-    Console.WriteLine($"Red lines were crossed here: ({x}, {y})");
 }
 CrossingLine();
