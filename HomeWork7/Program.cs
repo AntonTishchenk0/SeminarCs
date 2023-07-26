@@ -96,7 +96,7 @@ Show2dArray(myArray);
 
 ElementValue(myArray, i, j);*/
 
-// Task 3. Задайте двумерный массив из целых чисел. 
+/* Task 3. Задайте двумерный массив из целых чисел. 
 // Найдите среднее арифметическое элементов в каждом столбце.
 // Например, задан массив:
 // 1 4 7 2
@@ -156,4 +156,4 @@ Show2dArray(myArray);
 
 double[,] avgArray = Average(myArray);
 Console.Write(avgArray);
-
+*/
