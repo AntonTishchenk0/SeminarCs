@@ -1,4 +1,4 @@
-﻿// Task 1. Задайте двумерный массив размером m×n, 
+﻿/* Task 1. Задайте двумерный массив размером m×n, 
 // заполненный случайными вещественными числами.
 // m = 3, n = 4.
 // 0,5 7 -2 -0,2
@@ -35,7 +35,7 @@ Console.Write("Input a max value: ");
 int maxValue = Convert.ToInt32(Console.ReadLine());
 
 double[,] myArray = CreateRandom2dArray(rows, colums, minValue, maxValue);
-Show2dArray(myArray);
+Show2dArray(myArray);*/
 
 /* Task 2. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
