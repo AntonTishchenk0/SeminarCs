@@ -31,11 +31,11 @@ Console.WriteLine(SumNaturalElements(numb1, numb2));*/
 // Task 3. Напишите программу вычисления функции Аккермана с помощью рекурсии. 
 // Даны два неотрицательных числа m и n.
 
-int Accerman(int m, int n)
+int Ackerman(int m, int n)
 {
-    if (n == 0) return m + 1;
-    else if (n != 0 && m == 0) return Accerman(n - 1, 1);
-    else return Accerman(n - 1, Accerman(n, m - 1));
+    if (m == 0) return n + 1;
+    else if (m > 0 && n == 0) return Ackerman(m - 1, 1);
+    else return Ackerman(m - 1, Ackerman(m, n - 1));
 }
 
 Console.Write("Inpup m: ");
@@ -43,4 +43,5 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Accerman(m, n);
+int result = Ackerman(m, n);
+Console.Write("Result of the Ackerman function: " + result);
